@@ -40,13 +40,6 @@
 - belongs_to :uesrs
 - has_many :users, through: :groups_users
 
-### create-groupsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|group_name|integer|null: false|
-### Association
-- has_many :users
-
 ### edit-groupテーブル
 |Column|Type|Options|
 |------|----|-------|
