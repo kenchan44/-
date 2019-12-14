@@ -38,7 +38,6 @@
 ### Association
 - belongs_to :group
 - belongs_to :uesrs
-- has_many :users, through: :groups_users
 
 ### edit-groupテーブル
 |Column|Type|Options|
