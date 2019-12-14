@@ -1,15 +1,14 @@
 # ChatSpace DB設計
 
-### userテーブル
+### usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|name|integer|null: false, foreign_key: true|
 |email|integer|null: false, foreign_key: true|
 |password|integer|null: false, foreign_key: true|
 ### Association
-- has_many :body
-- has_many :image
-- has_many :group
+- belongs_to :group
+- has_many :groups, through: :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -20,36 +19,34 @@
 - belongs_to :group
 - belongs_to :user
 
-### groupテーブル
+### groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
 |image|string||
-|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
-- has_many :user, through: :groups_users
+- has_many :users, through: :groups_users
 
-### create-groupテーブル
+### create-groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-
+|group_name|integer|null: false|
 ### Association
-- has_many :user_id
+- has_many :users
 
-### edit-groupテーブル
+### edit-groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-|user_id|integer|null: false|
+|group_name|integer|null: false|
+|name|integer|null: false|
 ### Association
-- has_many :user_id
+- has_many :users
 
-### edit-accountテーブル
+### edit-usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer||
+|name|integer||
 |email|integer|null: false|
 ### Association
-- has_many :user_id
+- has_many :users
