@@ -51,6 +51,8 @@
 |------|----|-------|
 |user_id|integer||
 |email|integer|null: false|
+### Association
+- has_many :user_id
 
 
 
