@@ -6,16 +6,15 @@
 |name|string|null: false, index: true,|
 |email|string|null: false, unique: true|
 |password|integer|null: false|
-|group_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :messages
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 
-### groupテーブル
+### groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :messages
 - has_many :groups_users
@@ -33,8 +32,8 @@
 ### messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: true,unless: |
+|body|text||
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
