@@ -35,22 +35,8 @@
 |------|----|-------|
 |body|text|null: false|
 |image|string||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
-- belongs_to :uesrs
-
-### edit-groupテーブル
-|Column|Type|Options|
-|------|----|-------|
-|group_name|integer|null: false|
-|name|integer|null: false|
-### Association
-- has_many :users
-
-### edit-usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|integer||
-|email|integer|null: false|
-### Association
-- has_one :user
+- belongs_to :user
