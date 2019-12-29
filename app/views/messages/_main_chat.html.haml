@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+  %body
+    .main
+      .main__info
+        .main__info__name-box
+          .main__info__name-box__group-name group-name
+          .main__info__name-box__members-name members-name
+        = link_to "Edit", "#", class: "main__info__edit-btn" 
+          
+      .main__message-list
+        .main__message-list__name
+          .main__message-list__name--left KEN
+          .main__message-list__name--right 2019/12/24(Tue)
+        .main__message-list__message HELLO!
+      .type-message
+        %form.type-message__form
+          .input-box
+            %input{class: "input-box__text", placeholder: "type a message"}
+            %label{class: "input-box__image"}
+              %i.far.fa-image
+              %input{type: "file", class: "input-box__image__file"}
+        %input{class: "submit-btn", value: "Send"}
+
