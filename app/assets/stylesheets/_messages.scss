@@ -6,12 +6,11 @@
   float: left;
   height: 100vh;
   width: 300px;
-  background-color: $navy;
-
+  background-color:$header-navy;
     &__user{
       height: 100px;
       padding: 0 20px;
-      background-color: $navy;
+      background-color:$header-navy;
       align-items: center;
       display: flex;
       justify-content: space-around;
@@ -19,7 +18,7 @@
         &__box{
           height: 20px;
           width: 260px;
-          background-color: $navy;
+          background-color: $header-navy;
           color: $white;
           font-weight: bold;
           display: flex;
@@ -48,7 +47,6 @@
           }
       }
     }
-
     &__groups{
       height: calc(100vh - 100px);
       background-color: $group-navy;
@@ -56,6 +54,7 @@
 
         &__group{
           padding: 20px 0 40px 0 ;
+          
           &__name{
             font-size: 15px;
             color: $white;
@@ -75,7 +74,6 @@
   height: 100vh;
   width: calc(100vw - 300px);
   background-color: $white;
-
     &__info{
       background-color: $white;
       height: 100％;
@@ -99,7 +97,6 @@
             color: $text-gray;
           }
         }
-
         &__edit-btn{
             font-size: 16px;
             width: 72px;
@@ -114,7 +111,7 @@
     }
     
     &__message-list{
-      background-color: $message-list-gray;
+      background-color: #fafafa;
       height: calc(100vh - 190px);
       padding: 35px 40px;
 
@@ -124,7 +121,7 @@
           flex-direction: row;
 
           &--left{
-            color: $text-black;
+            color:$text-black;
             font-size: 16px;
             font-weight: bold;
           }
