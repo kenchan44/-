@@ -2,21 +2,16 @@
   box-sizing: border-box;
 }
 
-$gray:#253141;
-$white:#ffffff;
-$blue: #38aef0;
-
-
-
 .side{
   float: left;
   height: 100vh;
   width: 300px;
-  background-color: $gray;
+  background-color: $navy;
+
     &__user{
       height: 100px;
       padding: 0 20px;
-      background-color: $gray;
+      background-color: $navy;
       align-items: center;
       display: flex;
       justify-content: space-around;
@@ -24,7 +19,7 @@ $blue: #38aef0;
         &__box{
           height: 20px;
           width: 260px;
-          background-color: $gray;
+          background-color: $navy;
           color: $white;
           font-weight: bold;
           display: flex;
@@ -53,9 +48,10 @@ $blue: #38aef0;
           }
       }
     }
+
     &__groups{
       height: calc(100vh - 100px);
-      background-color: #2f3e51;
+      background-color: $group-navy;
       padding: 0 20px;
 
         &__group{
@@ -79,6 +75,7 @@ $blue: #38aef0;
   height: 100vh;
   width: calc(100vw - 300px);
   background-color: $white;
+
     &__info{
       background-color: $white;
       height: 100％;
@@ -94,14 +91,15 @@ $blue: #38aef0;
             font-size: 20px;
             margin-bottom: 15px;
             box-sizing: border-box;
-            color: #333333;
+            color: $text-black;
           }
           &__members-name{
             box-sizing: border-box;
             font-size: 12px;
-            color: #999999;
+            color: $text-gray;
           }
         }
+
         &__edit-btn{
             font-size: 16px;
             width: 72px;
@@ -116,7 +114,7 @@ $blue: #38aef0;
     }
     
     &__message-list{
-      background-color: #fafafa;
+      background-color: $message-list-gray;
       height: calc(100vh - 190px);
       padding: 35px 40px;
 
@@ -126,12 +124,12 @@ $blue: #38aef0;
           flex-direction: row;
 
           &--left{
-            color: #333333;
+            color: $text-black;
             font-size: 16px;
             font-weight: bold;
           }
           &--right{
-            color: #999999;
+            color: $text-gray;
             font-size: 12px;
             margin-left: 5px;
           }
@@ -143,7 +141,7 @@ $blue: #38aef0;
     }
 
     .type-message{
-      background-color: #d2d2d2;
+      background-color: $type-message-gray;
       height: 90px;
       padding: 20px 40px;
       display: flex;
