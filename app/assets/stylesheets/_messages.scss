@@ -54,7 +54,7 @@
 
         &__group{
           padding: 20px 0 40px 0 ;
-          
+
           &__name{
             font-size: 15px;
             color: $white;
@@ -111,7 +111,7 @@
     }
     
     &__message-list{
-      background-color: #fafafa;
+      background-color: $message-list-gray;
       height: calc(100vh - 190px);
       padding: 35px 40px;
 
